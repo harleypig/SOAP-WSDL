@@ -4,6 +4,8 @@ ELSIF (complexType.get_variety == 'extension');
     INCLUDE complexType/extension.tt(complexType = complexType);
 ELSIF (complexType.get_variety == 'sequence');
     INCLUDE complexType/extension.tt(complexType = complexType);
+ELSIF (complexType.get_variety == 'choice');
+    INCLUDE complexType/all.tt(complexType = complexType);
 ELSIF (complexType.get_variety == 'all');
     INCLUDE complexType/extension.tt(complexType = complexType);
 ELSE;
